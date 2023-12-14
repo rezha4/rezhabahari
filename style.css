@@ -19,6 +19,37 @@
   overflow-x: hidden;
 } */
 
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+footer a {
+  color: white;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+#expand {
+  padding: 0.5rem;
+  border: none;
+  height: 3rem;
+  width: 15rem;
+  background-color: var(--black);
+  color: white;
+  margin: auto;
+}
+
+#expand:hover {
+  background-color: var(--gray);
+}
+
+#expand:active {
+  background-color: black;
+}
+
 img {
   position: absolute;
   z-index: -100;
@@ -126,6 +157,9 @@ nav div {
   width: 60vw;
   padding: 2rem;
   margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .subtle-shadow {
@@ -173,6 +207,25 @@ footer {
   padding: 1rem;
 }
 
-footer h2, footer p {
+footer h2,
+footer p {
   color: white;
+}
+
+svg:hover #whatsapp {
+  fill: #25d366;
+}
+
+svg:hover #github {
+  fill: #161414;
+}
+
+svg:hover #linkedin {
+  fill: #0077b5;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }

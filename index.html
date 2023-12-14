@@ -8,16 +8,16 @@
     <script defer src="./index.js"></script>
   </head>
   <body>
-    <img src="./contour.webp" alt=" " />
+    <img src="./images/contour.webp" alt=" " />
     <nav class="subtle-shadow">
-      <h1>Rezha Bahari</h1>
+      <h1><a href="#hero">Rezha Bahari</a></h1>
       <div>
-        <p>About</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <p><a href="#about">About</a></p>
+        <p><a href="#projects">Projects</a></p>
+        <p><a href="#contact">Contact</a></p>
       </div>
     </nav>
-    <main>
+    <main id="hero">
       <div class="hero">
         <p>Rezha</p>
         <p class="bahari">Bahari</p>
@@ -25,9 +25,9 @@
         <p class="webdev">Web Developer</p>
       </div>
     </main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="story subtle-shadow">
-        <div class="short">
+        <div class="short" id="short">
           <h2>hello</h2>
           <p>
             <br />
@@ -47,9 +47,8 @@
             I got my MERN stack skill on The Odin Project, starting from July
             2023. I speed through it, and finished it on December 2023.
           </p>
-          <button>Extend the story</button>
         </div>
-        <div class="long" hidden>
+        <div class="long" id="long" hidden>
           <h2>hello</h2>
           <p>
             <br />
@@ -79,10 +78,11 @@
             challenges thrown at me.
           </p>
         </div>
+        <button id="expand">Expand the story</button>
       </div>
     </section>
-    <img src="./contour.webp" alt=" " />
-    <section class="projects">
+    <img src="./images/contour.webp" alt=" " />
+    <section class="projects" id="projects">
       <h2>Projects</h2>
       <div class="card-container">
         <div class="card subtle-shadow">
@@ -137,12 +137,98 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="contact">
       <h2>Connect with me</h2>
-      <div></div>
+      <div class="contact-icons">
+        <a
+          href="https://wa.me/+6281316917668"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg
+            width="80px"
+            height="80px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="whatsapp"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+              fill="#eeeeee"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/rezha4"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg
+            width="80px"
+            height="80px"
+            viewBox="0 0 20 20"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="github"
+                transform="translate(-140.000000, -7559.000000)"
+                fill="#eeeeee"
+              >
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path
+                    d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                    id="github-[#142]"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/rezha-bahari-bb23b5117/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg
+            width="80px"
+            height="80px"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+          >
+            <path
+              id="linkedin"
+              fill="#eeeeee"
+              d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"
+            />
+          </svg>
+        </a>
+      </div>
       <div>
         <p>handcrafted with vanilla html, css, js © 2023</p>
-        <p>source code</p>
+        <p>
+          <a
+            href="https://github.com/rezha4/rezhabahari"
+            target="_blank"
+            rel="noreferrer noopener"
+            >source code</a
+          >
+        </p>
       </div>
     </footer>
   </body>
