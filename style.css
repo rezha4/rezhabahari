@@ -50,7 +50,7 @@ a:hover {
   background-color: black;
 }
 
-img {
+#bg {
   position: absolute;
   z-index: -100;
   width: 100vw;
@@ -162,6 +162,11 @@ nav div {
   gap: 5rem;
 }
 
+.tech-stack {
+  display: flex;
+  
+}
+
 .subtle-shadow {
   box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.25);
 }
@@ -195,6 +200,17 @@ nav div {
   height: 400px;
   width: 250px;
   padding: 1rem;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.card img {
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.7em;
 }
 
 footer {
