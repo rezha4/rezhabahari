@@ -19,7 +19,7 @@
   overflow-x: hidden;
 } */
 
-a {
+nav a {
   text-decoration: none;
   color: var(--black);
 }
@@ -51,9 +51,9 @@ a:hover {
 }
 
 #bg {
-  position: absolute;
+  position: fixed;
   z-index: -100;
-  width: 100vw;
+  width: 100;
   height: 140vh;
   opacity: 30%;
   animation: subtleMovement 30s infinite alternate ease-in-out;
@@ -116,42 +116,6 @@ nav div {
   white-space: nowrap;
 }
 
-@media (max-width: 800px) {
-  .hero p {
-    font-size: 1.5rem;
-  }
-  .bahari {
-    padding-left: 5rem;
-  }
-  .fullstack {
-    margin-left: -5rem;
-  }
-  .webdev {
-    padding-left: 10rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .hero p {
-    font-size: xx-large;
-  }
-  .bahari {
-    padding-left: 5rem;
-  }
-  .fullstack {
-    margin-left: -5rem;
-  }
-  .webdev {
-    padding-left: 5rem;
-  }
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .story {
   background-color: white;
   width: 60vw;
@@ -159,16 +123,7 @@ nav div {
   margin: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-}
-
-.tech-stack {
-  display: flex;
-  
-}
-
-.subtle-shadow {
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.25);
+  gap: 2rem;
 }
 
 .story h2 {
@@ -177,6 +132,20 @@ nav div {
 
 .story p {
   font-size: 1.5rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack {
+  display: flex;
+}
+
+.subtle-shadow {
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.25);
 }
 
 .projects h2 {
@@ -193,6 +162,7 @@ nav div {
   gap: 5rem;
   justify-content: space-around;
   padding: 5rem;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -202,6 +172,7 @@ nav div {
   padding: 1rem;
   text-align: center;
   overflow-y: hidden;
+  border-radius: 1rem;
 }
 
 .card img {
@@ -211,6 +182,14 @@ nav div {
 
 .card p {
   font-size: 0.7em;
+}
+
+.card a {
+  color: black;
+}
+
+.card a:hover {
+  color: var(--accent);
 }
 
 footer {
@@ -244,4 +223,57 @@ svg:hover #linkedin {
   display: flex;
   justify-content: center;
   gap: 3rem;
+}
+
+@media (max-width: 800px) {
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .bahari {
+    padding-left: 5rem;
+  }
+  .fullstack {
+    margin-left: -5rem;
+  }
+  .webdev {
+    padding-left: 10rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero p {
+    font-size: xx-large;
+  }
+  .bahari {
+    padding-left: 5rem;
+  }
+  .fullstack {
+    margin-left: -5rem;
+  }
+  .webdev {
+    padding-left: 5rem;
+  }
+  nav {
+    padding: 0.2rem;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  nav div {
+    gap: 0.5rem;
+  }
+  .story {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+    gap: 1rem;
+  }
+  .story h2 {
+    font-size: large;
+  }
+  .story p {
+    font-size: small;
+  }
 }
