@@ -32,24 +32,6 @@ a:hover {
   color: var(--accent);
 }
 
-#expand {
-  padding: 0.5rem;
-  border: none;
-  height: 3rem;
-  width: 15rem;
-  background-color: var(--black);
-  color: white;
-  margin: auto;
-}
-
-#expand:hover {
-  background-color: var(--gray);
-}
-
-#expand:active {
-  background-color: black;
-}
-
 #bg {
   position: fixed;
   z-index: -100;
@@ -116,6 +98,76 @@ nav div {
   white-space: nowrap;
 }
 
+.subtle-shadow {
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.experience {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+.experience h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.experience-card img {
+  width: 100%;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.projects {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: 5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  height: 400px;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.card img {
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.card p {
+  font-size: medium;
+}
+
+.card a {
+  color: black;
+}
+
+.card a:hover {
+  color: var(--accent);
+}
+
 .story {
   background-color: white;
   width: 60vw;
@@ -140,56 +192,26 @@ nav div {
   align-items: center;
 }
 
+#expand {
+  padding: 0.5rem;
+  border: none;
+  height: 3rem;
+  width: 15rem;
+  background-color: var(--black);
+  color: white;
+  margin: auto;
+}
+
+#expand:hover {
+  background-color: var(--gray);
+}
+
+#expand:active {
+  background-color: black;
+}
+
 .tech-stack {
   display: flex;
-}
-
-.subtle-shadow {
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.25);
-}
-
-.projects h2 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.projects {
-  padding: 1rem;
-}
-
-.card-container {
-  display: flex;
-  gap: 5rem;
-  justify-content: space-around;
-  padding: 5rem;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: white;
-  height: 400px;
-  width: 250px;
-  padding: 1rem;
-  text-align: center;
-  overflow-y: hidden;
-  border-radius: 1rem;
-}
-
-.card img {
-  width: 100%;
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-.card p {
-  font-size: 0.7em;
-}
-
-.card a {
-  color: black;
-}
-
-.card a:hover {
-  color: var(--accent);
 }
 
 footer {
@@ -225,7 +247,7 @@ svg:hover #linkedin {
   gap: 3rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .hero p {
     font-size: 1.5rem;
   }
@@ -237,6 +259,16 @@ svg:hover #linkedin {
   }
   .webdev {
     padding-left: 10rem;
+  }
+  footer {
+    height: 10vh;
+  }
+  footer p h2 {
+    font-size: small;
+  }
+  svg {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -253,9 +285,12 @@ svg:hover #linkedin {
   .webdev {
     padding-left: 5rem;
   }
+  nav a {
+    font-size: small;
+  }
   nav {
     padding: 0.2rem;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.5rem;
   }
   nav div {
@@ -275,5 +310,15 @@ svg:hover #linkedin {
   }
   .story p {
     font-size: small;
+  }
+  footer {
+    height: 10vh;
+  }
+  footer p, h2{
+    font-size: xx-small;
+  }
+  svg {
+    width: 25px;
+    height: 25px;
   }
 }
