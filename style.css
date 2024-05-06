@@ -19,9 +19,21 @@
   overflow-x: hidden;
 } */
 
+.btn {
+  padding: 0.5rem;
+  
+}
+
 nav a {
   text-decoration: none;
   color: var(--black);
+}
+
+.hero a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: xx-large;
+  padding-top: 2rem;
 }
 
 footer a {
