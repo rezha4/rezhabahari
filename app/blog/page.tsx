@@ -1,7 +1,7 @@
 const BlogPage = () => {
   return (
     <div>
-      BlogPage
+      BlogPage 2
     </div>
   )
 }
